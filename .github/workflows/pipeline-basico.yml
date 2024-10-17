@@ -1,10 +1,14 @@
 name: pipeline-basico
+
+
 on:
-push:
-branches: [ "main" ]
-jobs:
-build:
-runs-on: ubuntu-latest
+  push:
+    branches: [ "main" ]
+
+
+obs:
+  build:
+    runs-on: ubuntu-latest
 steps:
-- name: executa comando
-run: echo "Configuração inicial do pipeline"
+ - name: executa comando
+ run: echo "Configuração inicial do pipeline"
